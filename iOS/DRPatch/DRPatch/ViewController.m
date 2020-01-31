@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "YYYTestObject.h"
 @interface ViewController ()
 
 @end
@@ -19,5 +19,8 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [YYYTestObject.new test];
+}
 
 @end
