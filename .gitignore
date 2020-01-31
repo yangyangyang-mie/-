@@ -1,0 +1,10 @@
+# Mac 相关
+*.DS_Store
+
+# iOS 相关
+
+iOS/Carthage/Build/
+
+iOS/iOSInjectionProject/
+
+xcuserdata/
