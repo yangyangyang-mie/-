@@ -61,19 +61,35 @@
 		23E2869423E40AC900393579 /* DRPatch */ = {
 			isa = PBXGroup;
 			children = (
+				23E286B023E40BB800393579 /* MVC */,
+				23E286AF23E40B8C00393579 /* MainLife */,
+			);
+			path = DRPatch;
+			sourceTree = "<group>";
+		};
+		23E286AF23E40B8C00393579 /* MainLife */ = {
+			isa = PBXGroup;
+			children = (
 				23E2869523E40AC900393579 /* AppDelegate.h */,
 				23E2869623E40AC900393579 /* AppDelegate.m */,
 				23E2869823E40AC900393579 /* SceneDelegate.h */,
 				23E2869923E40AC900393579 /* SceneDelegate.m */,
+				23E286A623E40ACA00393579 /* Info.plist */,
+				23E286A723E40ACA00393579 /* main.m */,
+				23E286A323E40ACA00393579 /* LaunchScreen.storyboard */,
+				23E286A123E40ACA00393579 /* Assets.xcassets */,
+			);
+			name = MainLife;
+			sourceTree = "<group>";
+		};
+		23E286B023E40BB800393579 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
 				23E2869B23E40AC900393579 /* ViewController.h */,
 				23E2869C23E40AC900393579 /* ViewController.m */,
 				23E2869E23E40AC900393579 /* Main.storyboard */,
-				23E286A123E40ACA00393579 /* Assets.xcassets */,
-				23E286A323E40ACA00393579 /* LaunchScreen.storyboard */,
-				23E286A623E40ACA00393579 /* Info.plist */,
-				23E286A723E40ACA00393579 /* main.m */,
 			);
-			path = DRPatch;
+			name = MVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
