@@ -14,6 +14,13 @@
 		23E286A223E40ACA00393579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23E286A123E40ACA00393579 /* Assets.xcassets */; };
 		23E286A523E40ACA00393579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E286A323E40ACA00393579 /* LaunchScreen.storyboard */; };
 		23E286A823E40ACA00393579 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E286A723E40ACA00393579 /* main.m */; };
+		23E286B523E40C7400393579 /* DRObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E286B423E40C7400393579 /* DRObject.m */; };
+		23E286B823E40CD900393579 /* DRMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E286B723E40CD900393579 /* DRMethod.m */; };
+		23E286BB23E40D8B00393579 /* DRStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E286BA23E40D8B00393579 /* DRStatement.m */; };
+		23E286BE23E40E0400393579 /* YYYTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E286BD23E40E0400393579 /* YYYTestObject.m */; };
+		23E286C023E40EAC00393579 /* DRTest.dr in Resources */ = {isa = PBXBuildFile; fileRef = 23E286BF23E40EAC00393579 /* DRTest.dr */; };
+		23E286C323E40FC200393579 /* DRParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E286C223E40FC200393579 /* DRParser.m */; };
+		69685204C9D4FF38CB27EAD6 /* Pods_DRPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D44EFDCBAD92C068F7AFF4 /* Pods_DRPatch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,20 @@
 		23E286A423E40ACA00393579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23E286A623E40ACA00393579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23E286A723E40ACA00393579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23E286B323E40C7400393579 /* DRObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRObject.h; sourceTree = "<group>"; };
+		23E286B423E40C7400393579 /* DRObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRObject.m; sourceTree = "<group>"; };
+		23E286B623E40CD900393579 /* DRMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRMethod.h; sourceTree = "<group>"; };
+		23E286B723E40CD900393579 /* DRMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRMethod.m; sourceTree = "<group>"; };
+		23E286B923E40D8B00393579 /* DRStatement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRStatement.h; sourceTree = "<group>"; };
+		23E286BA23E40D8B00393579 /* DRStatement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRStatement.m; sourceTree = "<group>"; };
+		23E286BC23E40E0400393579 /* YYYTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYYTestObject.h; sourceTree = "<group>"; };
+		23E286BD23E40E0400393579 /* YYYTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYYTestObject.m; sourceTree = "<group>"; };
+		23E286BF23E40EAC00393579 /* DRTest.dr */ = {isa = PBXFileReference; lastKnownFileType = text; path = DRTest.dr; sourceTree = "<group>"; };
+		23E286C123E40FC200393579 /* DRParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRParser.h; sourceTree = "<group>"; };
+		23E286C223E40FC200393579 /* DRParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRParser.m; sourceTree = "<group>"; };
+		A3D44EFDCBAD92C068F7AFF4 /* Pods_DRPatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRPatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F993E31334A0B4A290579903 /* Pods-DRPatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRPatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRPatch/Pods-DRPatch.debug.xcconfig"; sourceTree = "<group>"; };
+		FAD1F7A0DBEEEFDA14C9931B /* Pods-DRPatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRPatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRPatch/Pods-DRPatch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +57,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69685204C9D4FF38CB27EAD6 /* Pods_DRPatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DD82D2C869EDFB1D975BE0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F993E31334A0B4A290579903 /* Pods-DRPatch.debug.xcconfig */,
+				FAD1F7A0DBEEEFDA14C9931B /* Pods-DRPatch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		23E2868923E40AC900393579 = {
 			isa = PBXGroup;
 			children = (
 				23E2869423E40AC900393579 /* DRPatch */,
 				23E2869323E40AC900393579 /* Products */,
+				1DD82D2C869EDFB1D975BE0A /* Pods */,
+				E48649579C9A6915300E43DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,8 +94,10 @@
 		23E2869423E40AC900393579 /* DRPatch */ = {
 			isa = PBXGroup;
 			children = (
+				23E286C523E416BB00393579 /* DRPatch */,
 				23E286B023E40BB800393579 /* MVC */,
 				23E286AF23E40B8C00393579 /* MainLife */,
+				23E286BF23E40EAC00393579 /* DRTest.dr */,
 			);
 			path = DRPatch;
 			sourceTree = "<group>";
@@ -88,8 +123,33 @@
 				23E2869B23E40AC900393579 /* ViewController.h */,
 				23E2869C23E40AC900393579 /* ViewController.m */,
 				23E2869E23E40AC900393579 /* Main.storyboard */,
+				23E286BC23E40E0400393579 /* YYYTestObject.h */,
+				23E286BD23E40E0400393579 /* YYYTestObject.m */,
 			);
 			name = MVC;
+			sourceTree = "<group>";
+		};
+		23E286C523E416BB00393579 /* DRPatch */ = {
+			isa = PBXGroup;
+			children = (
+				23E286B323E40C7400393579 /* DRObject.h */,
+				23E286B423E40C7400393579 /* DRObject.m */,
+				23E286B623E40CD900393579 /* DRMethod.h */,
+				23E286B723E40CD900393579 /* DRMethod.m */,
+				23E286B923E40D8B00393579 /* DRStatement.h */,
+				23E286BA23E40D8B00393579 /* DRStatement.m */,
+				23E286C123E40FC200393579 /* DRParser.h */,
+				23E286C223E40FC200393579 /* DRParser.m */,
+			);
+			name = DRPatch;
+			sourceTree = "<group>";
+		};
+		E48649579C9A6915300E43DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3D44EFDCBAD92C068F7AFF4 /* Pods_DRPatch.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23E286AB23E40ACA00393579 /* Build configuration list for PBXNativeTarget "DRPatch" */;
 			buildPhases = (
+				E0703CAE3E5AB7B435228477 /* [CP] Check Pods Manifest.lock */,
 				23E2868E23E40AC900393579 /* Sources */,
 				23E2868F23E40AC900393579 /* Frameworks */,
 				23E2869023E40AC900393579 /* Resources */,
+				E75D7BABFB5E1AB9FAA25A10 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -118,6 +180,7 @@
 		23E2868A23E40AC900393579 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DR;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = yyy;
 				TargetAttributes = {
@@ -152,10 +215,58 @@
 				23E286A523E40ACA00393579 /* LaunchScreen.storyboard in Resources */,
 				23E286A223E40ACA00393579 /* Assets.xcassets in Resources */,
 				23E286A023E40AC900393579 /* Main.storyboard in Resources */,
+				23E286C023E40EAC00393579 /* DRTest.dr in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E0703CAE3E5AB7B435228477 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DRPatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E75D7BABFB5E1AB9FAA25A10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DRPatch/Pods-DRPatch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DRPatch/Pods-DRPatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23E2868E23E40AC900393579 /* Sources */ = {
@@ -164,8 +275,13 @@
 			files = (
 				23E2869D23E40AC900393579 /* ViewController.m in Sources */,
 				23E2869723E40AC900393579 /* AppDelegate.m in Sources */,
+				23E286B823E40CD900393579 /* DRMethod.m in Sources */,
 				23E286A823E40ACA00393579 /* main.m in Sources */,
+				23E286C323E40FC200393579 /* DRParser.m in Sources */,
+				23E286BE23E40E0400393579 /* YYYTestObject.m in Sources */,
 				23E2869A23E40AC900393579 /* SceneDelegate.m in Sources */,
+				23E286BB23E40D8B00393579 /* DRStatement.m in Sources */,
+				23E286B523E40C7400393579 /* DRObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +419,7 @@
 		};
 		23E286AC23E40ACA00393579 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F993E31334A0B4A290579903 /* Pods-DRPatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -319,6 +436,7 @@
 		};
 		23E286AD23E40ACA00393579 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAD1F7A0DBEEEFDA14C9931B /* Pods-DRPatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
