@@ -1,0 +1,24 @@
+{
+    "className": "YYYTestObject",
+    "methods": [
+        {
+            "isClassMethod": 1,
+            "methodName": "test",
+            "statements": [
+                {
+                    "left": {
+                        "left": {
+                            "statement": "self",
+                        },
+                        "right": {
+                            "statement": "test2",
+                        },
+                    },
+                    "right": {
+                        "statement": "test"
+                    }
+                }
+            ]
+        }
+    ]
+}

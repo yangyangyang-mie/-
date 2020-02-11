@@ -12,4 +12,9 @@
 - (void)test {
     NSLog(@"hahaha");
 }
+
+- (id)test2 {
+    NSLog(@"test2");
+    return self;
+}
 @end

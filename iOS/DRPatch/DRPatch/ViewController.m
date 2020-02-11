@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "YYYTestObject.h"
+#import "DRParser.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [DRParser readFromFile:[NSURL fileURLWithPath:@"/Users/zeminyang/Desktop/bishe/毕设/iOS/DRPatch/DRPatch/DRTest.dr"]];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
